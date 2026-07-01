@@ -1,0 +1,14 @@
+description: bbot_scan
+config:
+  dns:
+    threads: 25
+    brute_threads: 1000
+exclude_flags:
+- aggressive
+- slow
+flags:
+- subdomain-enum
+output_modules:
+- subdomains
+scan_name: bbot_scan
+output_dir: recon/bose.com/subdomains/bbot
